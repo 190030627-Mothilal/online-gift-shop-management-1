@@ -1,0 +1,149 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% block title %}
+    	<title>Caroland</title>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% endblock %}
+     {% block css %}
+    <style type="text/css">
+    	.container{
+			width: 30%;
+			margin-left: 35%;
+			margin-top: 5%;
+			background-color: #f9f3f3;
+			border-radius: 10px;
+			padding: 30px;
+		}
+		.text{
+			padding: 5px;
+			border-radius: 5px;
+			width: 100%;
+		}
+		body{
+			background-color: #161a18;
+		}
+		.sub{
+			padding: 5px;
+			border-radius: 5px;
+			width: 30%;
+			margin-left: 30%;
+		}
+		.subm{
+			padding: 5px;
+			border-radius: 5px;
+			width: 50%;
+			margin-left: 25%;
+		}
+		h1 , h3{
+			text-align: center;
+		}
+		.radio-inline{
+			padding: 20px;
+		}
+		body {
+  			background-image: url('car_back.jpg');
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		.logo{
+			width: 60px;
+			border-radius: 50%;
+		}
+    </style>
+    {% endblock %}
+</head>
+<body>
+	{% block content %}
+    <br>
+    <br>
+
+<form action="https://www.kluniversity.in" method="post">
+	<div class="container">
+        <h3 style="border-bottom: 2px solid black;padding: 20px;font-family: 'Libre Baskerville', serif;">
+        	<i class="fa fa-user-plus"></i>
+            SignUp/Register </h3>
+        <br>
+
+    <label><b>Enter FirstName:</b></label>
+    <br>
+    <input type="text" placeholder="First Name" class="text" name="fname" required>
+    <br>
+    <br>
+
+
+    <label for="uname"><b>Gender :</b></label>
+    <br>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" checked>Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Female
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Other
+    </label>
+
+
+	<br>
+
+    <label ><b>Enter email :</b></label>
+    <input type="text" placeholder="example@gmail.com" class="text" name="email" required>
+    <br>
+    <br>
+    
+    <label for="uname"><b>Mobile Number :</b></label>
+    <input type="tel" placeholder="9999999999" class="text" name="phone" pattern="[0-9]{10}" required>
+    <br>
+    <br>
+
+    <label for="uname"><b>Address :</b></label>
+    <input type="text" placeholder="Adress & landmark" class="text" name="uname" required>
+    <br>
+    <br>
+
+
+    <label for="uname"><b>State :</b></label>
+    <input type="text" placeholder="State" class="text" name="uname" required>
+    <br>
+    <br>
+
+
+    <label for="uname"><b>Date Of Birth :</b></label>
+    <input type="date"  class="text" name="uname" required>
+    
+    <br>
+    <br>
+    <label ><b>Password:</b></label>
+    <input type="Password"  class="text" name="pwd" placeholder="Password" required>
+    <br>
+    <br>
+    <label for="uname"><b>Confirm Password :</b></label>
+    <input type="Password"  class="text" name="uname" placeholder="Password" required>
+    <br>
+    <br>
+  
+    <input type="checkbox" id="tc" name="tc" required>
+    <label >I Accept terms&Conditions</label>
+    <br>
+    <input type="checkbox" id="tc" name="tc" required >
+    <label >I have Driving licence</label>
+    <br>
+    <br>
+    <button type="submit" class="subm" >Register</button>
+    <br>
+
+
+  </div>
+</form>
+<br>
+<br>
+{% endblock %}
+</body>

@@ -1,0 +1,93 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% block title %}
+    <title>Customer login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {% endblock %}
+    {% block css %}
+    <style type="text/css">
+    	.container{
+			width: 30%;
+			margin-left: 35%;
+			margin-top: 5%;
+			background-color: #f9f3f3;
+			border-radius: 10px;
+			padding: 30px;
+		}
+		.text{
+			padding: 5px;
+			border-radius: 5px;
+			width: 100%;
+		}
+		body{
+			background-color: #161a18;
+		}
+		.sub{
+			padding: 5px;
+			border-radius: 5px;
+			width: 30%;
+			margin-left: 30%;
+		}
+		.subm{
+			padding: 5px;
+			border-radius: 5px;
+			width: 50%;
+			margin-left: 25%;
+		}
+		h1 , h3{
+			text-align: center;
+		}
+		.radio-inline{
+			padding: 20px;
+		}
+		body {
+  			background-image: url('car_back.jpg');
+  			background-repeat: no-repeat;
+  			background-size: cover;
+		}
+		.logo{
+			width: 60px;
+			border-radius: 50%;
+		}
+    </style>
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    <br>
+    <br>
+
+<form action="https://www.kluniversity.in" method="post">
+	<div class="container">
+        <h3 style="border-bottom: 2px solid black;padding: 20px;font-family: 'Libre Baskerville', serif;">
+            <i class="fa fa-sign-in"></i>
+             Customer login </h3>
+        <br>
+
+    <label><b>Email or Phone Number:</b></label>
+    <br>
+    <input type="text" placeholder="email or Phone Number" class="text" name="fname" required>
+    <br>
+    <br>
+    <label ><b>Password:</b></label>
+    <input type="Password"  class="text" name="pwd" placeholder="Password" required>
+    <br>
+    <br>
+    
+    <button type="submit" class="subm" >login</button>
+    <br>
+
+
+  </div>
+</form>
+<br>
+<br>
+{% endblock %}
+</body>
